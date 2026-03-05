@@ -10,6 +10,12 @@ app.get('/', (req: Request, res: Response) => {
     res.send('hello world')
 })
 
+app.get('/api/hello', (req: Request, res: Response) => {
+    res.json({
+        message: 'hello world'
+    })
+})
+
 app.listen(port, () => {
     console.log(`服务器运行在 http://localhost:${port} 运行中`)
 })
