@@ -1,0 +1,6 @@
+[run]
+# Make Node.js built-in modules available
+# This helps with Prisma compatibility
+
+[module-resolution]
+# Allow Bun to better resolve Prisma's internal modules
